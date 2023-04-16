@@ -48,9 +48,11 @@ async function handleInput(event) {
       return;
   }
 
+  // появление новой плитки на поле
   const newTile = new Tile(gameBoard);
   grid.getRandomEmptyCell().linkTile(newTile);
 
+  // конец игры
   if (!canMoveUp() && !canMoveDown() && !canMoveLeft() && !canMoveRight()) {
     await newTile.waitForAnimationEnd()
     alert("Try again!")
