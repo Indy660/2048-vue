@@ -30,6 +30,7 @@ body {
 }
 
 .tile {
+  /*через setProperty задается значения для --x и --y*/
   position: absolute;
   top: calc(var(--y) * (var(--cell-size) + var(--cell-gap)));
   left: calc(var(--x) * (var(--cell-size) + var(--cell-gap)));

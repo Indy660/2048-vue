@@ -7,8 +7,12 @@ export class Cell {
     this.y = y;
   }
 
+  // сохранение ячейки
   linkTile(tile) {
+    console.log(tile)
     tile.setXY(this.x, this.y);
+    console.log(2, tile)
+    // в linkedTile присваивается значение (x, y и знанчение)
     this.linkedTile = tile;
   }
 
